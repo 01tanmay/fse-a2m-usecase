@@ -8,11 +8,11 @@
 		<version>2.4.8</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.stockmarket.company-details</groupId>
-	<artifactId>Company-Details-for-Stock-Market-Application</artifactId>
+	<groupId>com.stockmarket.stock-details</groupId>
+	<artifactId>Stock-Details-for-Stock-Market-Application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Company-Details-for-Stock-Market-Application</name>
-	<description>Company Details for Stock Market Application</description>
+	<name>Stock-Details-for-Stock-Market-Application</name>
+	<description>Stock Details for Stock Market Application</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -24,11 +24,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
