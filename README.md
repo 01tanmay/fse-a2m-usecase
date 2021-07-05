@@ -11,3 +11,9 @@ Company-Details Service: 8083
 Eureka Discovery-Server: 8761
 
 Angular : 4200
+
+Logstash Server: 9600
+
+ElasticSearch Server: 9200
+
+Kibana Console: 5601

@@ -17,7 +17,7 @@ import java.util.Date;
 @AllArgsConstructor
 @Data
 //@Document(collection = "stock")
-@DynamoDBTable(tableName = "company")
+@DynamoDBTable(tableName = "stock")
 public class Stock {
 
     //@Id
