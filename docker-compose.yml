@@ -1,0 +1,74 @@
+
+version: '3'
+services:
+
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    network_mode: host
+    environment: 
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_HOST: localhost
+      MYSQL_DATABASE: ftb15
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_URL: jdbc:mysql://localhost:3306/ftb15
+
+  mongo:
+    image: mongo:latest
+    ports: 
+      - 27017:27017
+    container_name: mongo_container
+    network_mode: host
+      
+  CompanyDetailsApplication:
+    image: 01tanmay/keepnote:category-service-0.2
+    restart: always
+    network_mode: host
+    container_name: auth_service
+    depends_on: 
+      - mysql
+    ports:
+      - 8084:8084
+
+  
+  ZuulAPIGateway:
+     image: 01tanmay/keepnote:category-service-0.1
+     restart: always
+     network_mode: host
+     container_name: category_service
+     depends_on: 
+      - mongo
+     ports:
+      - 8187:8187
+      
+  userauthenticationservice:
+     image: 01tanmay/keepnote:note-service-0.1
+     restart: always
+     network_mode: host
+     container_name: note_service
+     depends_on: 
+      - mongo
+     ports:
+      - 8189:8189
+      
+  stockdetailsservice:
+     image: 01tanmay/keepnote:reminder-service-0.1
+     restart: always
+     network_mode: host
+     container_name: reminder_service
+     depends_on: 
+      - mongo
+     ports:
+      - 8815:8815
+
+  angularservice:
+     image: 01tanmay/keepnote:user-service-0.1
+     restart: always
+     network_mode: host
+     container_name: user_service
+     depends_on: 
+      - mongo
+     ports:
+      - 8085:8085
