@@ -7,6 +7,8 @@ import com.stockmarket.stockdetails.repostory.StockRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class StockServiceImpl implements StockService{
 
@@ -19,8 +21,11 @@ public class StockServiceImpl implements StockService{
     }
 
     @Override
-    public StockDetails getDetails(SearchCriteria sc) {
-        repo.getStockDetails(sc);
-        return new StockDetails();
+    public List<Stock> getDetails(SearchCriteria sc) {
+        List<Stock> hi = repo.getStockDetails(sc);
+        for(Stock s: hi){
+            System.out.println("details: " + s);
+        }
+        return hi;
     }
 }

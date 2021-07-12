@@ -4,7 +4,6 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.stockmarket.stockdetails.controller.StockController;
 import com.stockmarket.stockdetails.model.SearchCriteria;
 import com.stockmarket.stockdetails.model.Stock;
-import com.stockmarket.stockdetails.model.StockDetails;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +11,10 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -25,12 +26,32 @@ public class StockRepository implements MongoRepository {
     @Autowired
     private DynamoDBMapper mapper;
 
+    @Autowired
+    private MongoTemplate template;
+
     private static final Logger LOGGER = LogManager.getLogger(StockController.class);
 
-    public void getStockDetails(SearchCriteria sc) {
+    public List<Stock> getStockDetails(SearchCriteria searchCriteria) {
         LOGGER.info("inside get in repo");
-        StockDetails sd;
-         //res = mapper.load(Stock.class, sc.getCompanyCode(), sc.getStartDate(), sc.getEndDate());
+        try {
+            Query query = new Query();
+            Criteria queryCriteria = null;
+            Criteria c1 = Criteria.where("createdDate").gte(searchCriteria.getStartDate());
+            Criteria c2 = Criteria.where("createdDate").lte(searchCriteria.getEndDate());
+
+            Criteria c = new Criteria().andOperator(c1, c2);
+
+            queryCriteria = Criteria.where("companyCode").is(searchCriteria.getCompanyCode()).andOperator(c);
+            query.addCriteria(queryCriteria).with(Sort.by(new Sort.Order(Sort.Direction.ASC, "createdDate")));
+            System.out.println("before return");
+            return template.find(query, Stock.class);
+
+        } catch (Exception ex) {
+            LOGGER.error("error fetching all logs from company code", ex);
+//            throw new ApplicationException(new Error("INTERNAL_SERVER_ERROR"),"Internal Server Error"));
+            //throw new Exception("Internal Server Error", ex);
+        }
+        return null;
     }
 
     public Stock save(Stock stock) {

@@ -4,10 +4,12 @@ import com.stockmarket.stockdetails.model.SearchCriteria;
 import com.stockmarket.stockdetails.model.Stock;
 import com.stockmarket.stockdetails.model.StockDetails;
 
+import java.util.List;
+
 public interface StockService {
 
     Stock register(Stock stock);
 
-    StockDetails getDetails(SearchCriteria sc);
+    List<Stock> getDetails(SearchCriteria sc);
 
 }

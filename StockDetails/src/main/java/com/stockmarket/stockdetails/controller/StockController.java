@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.Date;
+import java.util.List;
 
 @RestController
 @Api(value = "Stocks")
@@ -37,13 +38,13 @@ public class StockController {
         return new ResponseEntity<>(service.register(stock), HttpStatus.CREATED);
     }
 
-    /*@GetMapping(value = "/get/{companyCode}/{startDate}/{endDate}")
-    public ResponseEntity<StockDetails> getDetails(@PathVariable("companyCode") String companyCode,
-                                                   @PathVariable("startDate") @DateTimeFormat(pattern = "yyyy-MM-dd") Date startDate,
-                                                   @PathVariable("endDate") @DateTimeFormat(pattern = "yyyy-MM-dd") Date endDate) {
+    @GetMapping(value = "/get/{companyCode}/{startDate}/{endDate}")
+    public ResponseEntity<List<Stock>> getStockPriceDetails(@PathVariable("companyCode") String companyCode,
+                                                            @PathVariable("startDate") @DateTimeFormat(pattern = "yyyy-MM-dd") Date startDate,
+                                                            @PathVariable("endDate") @DateTimeFormat(pattern = "yyyy-MM-dd") Date endDate) {
         LOGGER.info("company code: " + companyCode);
         SearchCriteria sc = new SearchCriteria(companyCode, startDate, endDate);
-        return ResponseEntity.ok(service.getDetails(sc));
+        return new ResponseEntity<>(service.getDetails(sc), HttpStatus.OK);
 
-    }*/
+    }
 }

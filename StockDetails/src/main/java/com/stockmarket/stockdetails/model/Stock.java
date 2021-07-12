@@ -33,6 +33,6 @@ public class Stock {
     private long stockPrice;
 
     @DynamoDBAttribute
-    private Date stockDate;
+    private Date createdDate;
 
 }
