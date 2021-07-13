@@ -22,15 +22,15 @@ services:
     container_name: mongo_container
     network_mode: host
       
-  CompanyDetailsApplication:
-    image: 01tanmay/keepnote:category-service-0.2
+  UserAuthentication:
+    image: 01tanmay/fse-a2m:
     restart: always
     network_mode: host
     container_name: auth_service
     depends_on: 
       - mysql
     ports:
-      - 8084:8084
+      - 8081:8081
 
   
   ZuulAPIGateway:
@@ -42,16 +42,6 @@ services:
       - mongo
      ports:
       - 8187:8187
-      
-  userauthenticationservice:
-     image: 01tanmay/keepnote:note-service-0.1
-     restart: always
-     network_mode: host
-     container_name: note_service
-     depends_on: 
-      - mongo
-     ports:
-      - 8189:8189
       
   stockdetailsservice:
      image: 01tanmay/keepnote:reminder-service-0.1

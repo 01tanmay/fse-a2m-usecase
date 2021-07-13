@@ -1,19 +1,26 @@
 Repository Description
 
-Zuul API-Gatway: 8080
+Zuul API-Gatway: 8080 -> 
 
-User Auth with JWT: 8081
+User Auth with JWT: 8081 -> Aurora/MySQL
 
-Stock-Details Service: 8082
+Stock-Details Service: 8082 -> DocumentDB
 
-Company-Details Service: 8083
+Company-Details Service: 8083 -> DocumentDB
 
-Eureka Discovery-Server: 8761
+Eureka Discovery-Server: 8761 -> 
 
-Angular : 4200
+Angular : 4200 -> 
 
-Logstash Server: 9600
+Logstash Server: 9600 -> Local
 
-ElasticSearch Server: 9200
+ElasticSearch Server: 9200 -> Local
 
-Kibana Console: 5601
+Kibana Console: 5601 -> Local
+
+
+Credentials:
+aws aurora: 	root/tanmay123
+aws documentdb: 
+hub.docker.com: 01tanmay/Tanmay123+
+
