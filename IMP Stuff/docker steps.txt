@@ -1,0 +1,27 @@
+1. CREATE PACKAGE
+-> mvn clean
+-> mvn package
+
+2. BUILD/CREATE IMAGES
+-> docker build -t user-auth .
+-> docker build -t stock-price .
+-> docker build -t company-details .
+-> docker build -t api-gateway .
+-> docker build -t eureka-server .
+-> docker build -t stockmarket-ui .
+
+3. TAG IMAGES
+->docker tag user-auth 01tanmay/fse-a2m:user-auth
+->docker tag stock-price 01tanmay/fse-a2m:stock-price
+->docker tag company-details 01tanmay/fse-a2m:company-details
+->docker tag api-gateway 01tanmay/fse-a2m:api-gateway
+->docker tag eureka-server 01tanmay/fse-a2m:eureka-server
+->docker tag stockmarket-ui 01tanmay/fse-a2m:stockmarket-ui
+
+4. PUSH IMAGES TO DOCKERHUB REPO(fse-a2m)
+docker push 01tanmay/fse-a2m:user-auth
+docker push 01tanmay/fse-a2m:stock-price
+docker push 01tanmay/fse-a2m:company-details
+docker push 01tanmay/fse-a2m:api-gateway
+docker push 01tanmay/fse-a2m:eureka-server
+docker push 01tanmay/fse-a2m:stockmarket-ui

@@ -99,6 +99,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>company-details</finalName>
 	</build>
 
 </project>

@@ -1,6 +1,7 @@
-FROM java:8-jre
-WORKDIR user/src
-ENV MONGO_DATABASE=stockmarket
-ENV MONGO_URL=mongodb://localhost:27017/stockmarket
-ADD target/NoteService-0.0.1-SNAPSHOT.jar /user/src/NoteService-0.0.1-SNAPSHOT.jar
-ENTRYPOINT ["java", "-jar", "NoteService-0.0.1-SNAPSHOT.jar"]
+FROM java:8
+
+EXPOSE 8082
+
+ADD target/company-details.jar company-details.jar
+
+ENTRYPOINT ["java", "-jar", "company-details.jar"]

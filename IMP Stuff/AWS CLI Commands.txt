@@ -1,0 +1,16 @@
+DocumentDB:
+
+Aurora:
+
+S3:(angular app deploy as dynamic website)
+
+create bucket:
+
+make build & deploy changes to S3
+-> ng build && npm run aws-deploy
+
+ECR:
+
+ECS:
+
+
