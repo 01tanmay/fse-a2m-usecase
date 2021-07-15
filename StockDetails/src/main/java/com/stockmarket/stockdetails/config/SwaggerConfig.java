@@ -27,7 +27,7 @@ public class SwaggerConfig {
 
     private ApiInfo infoApi() {
         return new ApiInfoBuilder()
-                .title("Company Details API")
+                .title("Stock Price API")
                 .description("Microservice for Stock Market Application")
                 .version("1.0.0")
                 .build();

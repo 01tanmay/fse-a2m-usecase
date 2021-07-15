@@ -2,7 +2,7 @@ Repository Description
 
 Zuul API-Gatway: 8080 -> 
 
-User Auth with JWT: 8081 -> Aurora/MySQL
+User Auth with JWT: 8081 -> Aurora/MySQL -> Local Docker & AWS?
 
 Stock-Details Service: 8082 -> AWS DocumentDB
 
@@ -10,7 +10,7 @@ Company-Details Service: 8083 -> AWS DocumentDB
 
 Eureka Discovery-Server: 8761 -> 
 
-Angular : 4200 ->
+Angular : 4200 -> not on local
 http://stockmarket-ui1.s3-website.ap-south-1.amazonaws.com/login
 
 Logstash Server: 9600 -> Local
@@ -19,10 +19,4 @@ ElasticSearch Server: 9200 -> Local
 
 Kibana Console: 5601 -> Local
 
-
-Credentials:
-aws aurora: 	root/tanmay123
-aws documentdb: 
-hub.docker.com: 01tanmay/Tanmay123+
-
-mvn package to create jar for docker image
+mongo: 27017

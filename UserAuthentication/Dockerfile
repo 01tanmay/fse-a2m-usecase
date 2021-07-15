@@ -4,5 +4,7 @@ FROM java:8
 #ENV MYSQL_USER root
 #ENV MYSQL_PASSWORD root
 EXPOSE 8081
+
 ADD target/user-auth.jar user-auth.jar
+
 ENTRYPOINT ["java", "-jar", "user-auth.jar"]
