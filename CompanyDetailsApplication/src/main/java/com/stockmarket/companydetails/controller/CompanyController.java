@@ -43,9 +43,15 @@ public class CompanyController {
     @ApiOperation(value = "Get company by code")
     @GetMapping(value = "info/{companyCode}")
     public ResponseEntity<Company> getCompanyDetails(@PathVariable("companyCode") String companyCode) {
-        LOGGER.info("Getting Company by Company Code");
+        LOGGER.info("Getting Company details with Company Code: " + companyCode);
         Company company = service.getCompanyByCode(companyCode);
-        return new ResponseEntity<>(company, HttpStatus.OK);
+        if (company != null)
+            return new ResponseEntity<>(company, HttpStatus.OK);
+        else {
+            LOGGER.info("invalid company id");
+            LOGGER.debug("company id not found");
+            return null;
+        }
     }
 
     @ApiOperation(value = "Get all Companies")

@@ -14,5 +14,4 @@ public class CompanyDetailsForStockMarketApplication {
 		LOGGER.info("Starting Company details Application...");
 		SpringApplication.run(CompanyDetailsForStockMarketApplication.class, args);
 	}
-
 }

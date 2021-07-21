@@ -36,7 +36,7 @@ cd /usr/share/elasticsearch/
 ./bin/plugin --install lmenezes/elasticsearch-kopf/1.5.7
 
 Step7: Configure to talk to logstash
-
+cd /etc/elasticsearch
 nano elasticsearch.yml
 *************
 cluster.name: elasticsearch
@@ -47,12 +47,14 @@ discovery.type: ec2
 discovery.ec2.tag.Name: "Elasticsearch for Stock Market Application"
 http.cors.enabled: true
 http.cors.allow-origin: "*"
+network.host: 0.0.0.0
 *************
 Ctrl + x to exit
 
 Step 8: Start Elastic Search service on EC2
 
 service elasticsearch start
+chk if started: curl -X GET "localhost:9200/?pretty"
 
 Step 9: Install Logstack
 
@@ -70,16 +72,24 @@ Ctrl + x to exit
 
 Step 11: Start Logstash service on EC2
 service logstash start
-..................................i am here
+
+check by putting data in log file manually: echo "demo data" >> /tmp/logstash.yml
+
 Step 12:Install Kibana
 
 sudo su
 yum update -y
 cd /root
 wget https://download.elastic.co/kibana/kibana/kibana-4.1.2-linux-x64.tar.gz
-tar xzf kibana-4.1.2-linux-x64.tar.gz
-rm -f kibana-4.1.2-linux-x64.tar.gz
+tar xzf kibana-4.1.2-linux-x64.tar.gz: uncompress
+rm -f kibana-4.1.2-linux-x64.tar.gz: remove
+
+Step 13: Configure Elastic Search server
+
 cd kibana-4.1.2-linux-x64
 nano config/kibana.yml
+elasticsearch_url: "ec2-3-14-150-134.us-east-2.compute.amazonaws.com:9200"
+
+Step 14: configure kibana to run in background:
 nohup ./bin/kibana &
 
