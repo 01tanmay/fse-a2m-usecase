@@ -14,12 +14,13 @@ Angular : 4200 ->
 http://stockmarket-ui1.s3-website.ap-south-1.amazonaws.com/login
 
 Logstash Server: 9600 -> AWS EC2
-http://18.119.128.37:9600/
+http://ec2-3-14-150-134.us-east-2.compute.amazonaws.com:9600/
 
 ElasticSearch Server: 9200 -> AWS EC2
-http://18.119.128.37:9200/
+http://ec2-3-14-150-134.us-east-2.compute.amazonaws.com:9200/
 
 Kibana Console: 5601 -> AWS EC2
-http://18.119.128.37:5601/
+http://ec2-3-14-150-134.us-east-2.compute.amazonaws.com:5601/
 
 mongo: 27017
+SQL: 

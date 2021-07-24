@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration info="true">
     <property name="LOG_FILE_LOCATION" value="logs" />
-    <property name="LOG_FILE_NAME" value="logstash" />
+    <property name="LOG_FILE_NAME" value="user-auth" />
     <property name="LOG_FILE_EXTENSION" value=".log" />
     <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"
                timeReference="contextBirth" />
