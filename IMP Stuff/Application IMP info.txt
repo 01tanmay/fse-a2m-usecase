@@ -2,7 +2,8 @@ Repository Description
 
 Zuul API-Gatway: 8080 -> 
 
-User Auth with JWT: 8081 -> Aurora/MySQL -> Local Docker & AWS?
+User Auth with JWT: 8081 -> Aurora/MySQL
+-> http://18.116.200.244:8081/
 
 Stock-Details Service: 8082 -> AWS DocumentDB
 

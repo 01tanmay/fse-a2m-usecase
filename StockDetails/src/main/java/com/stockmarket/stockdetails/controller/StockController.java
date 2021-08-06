@@ -32,7 +32,7 @@ public class StockController {
     //PreAuthorize("hasRole('ADMIN')")
     @PostMapping(value = "/add/{companyCode}")
     @ApiOperation(value = "Registering a new Stock")
-    public ResponseEntity<Stock> register(@RequestBody @Valid Stock stock) {
+    public ResponseEntity<Stock> addStock(@RequestBody @Valid Stock stock) {
         LOGGER.debug("Input: " + stock);
         //return ResponseEntity.ok(service.register(stock));
         return new ResponseEntity<>(service.register(stock), HttpStatus.CREATED);

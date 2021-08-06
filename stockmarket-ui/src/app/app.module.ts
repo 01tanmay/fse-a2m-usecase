@@ -17,6 +17,7 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { MaterialModule } from './_components/material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './_components/footer/footer.component';
+import { QuotesTableComponent } from './_components/quotes-table/quotes-table.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './_components/footer/footer.component';
     BoardModeratorComponent,
     BoardUserComponent,
     FooterComponent,
+    QuotesTableComponent,
   ],
   imports: [
     BrowserModule,

@@ -72,3 +72,282 @@
                 Getting Company details with Company Code: ptd01
 2021-07-24 13:20:15 [http-nio-8083-exec-2] INFO  c.s.c.controller.CompanyController -
                 Getting Company details with Company Code: ptd01
+2021-07-28 22:59:12 [main] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting Company details Application...
+2021-07-28 22:59:12 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting Company details Application...
+2021-07-28 22:59:13 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting CompanyDetailsForStockMarketApplication using Java 1.8.0_291 on TechRider with PID 14508 (D:\WORK\Workspaces\myWorkspace\stock market\CompanyDetailsApplication\target\classes started by tsd01 in D:\WORK\Workspaces\myWorkspace\stock market\CompanyDetailsApplication)
+2021-07-28 22:59:13 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                No active profile set, falling back to default profiles: default
+2021-07-28 22:59:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+                Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-28 22:59:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+                For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-28 22:59:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-07-28 22:59:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 12 ms. Found 0 MongoDB repository interfaces.
+2021-07-28 22:59:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+2021-07-28 22:59:17 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+2021-07-28 22:59:17 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2021-07-28 22:59:17 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-28 22:59:17 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2021-07-28 22:59:17 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 3794 ms
+2021-07-28 22:59:19 [restartedMain] INFO  org.mongodb.driver.cluster -
+                Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-07-28 22:59:19 [cluster-rtt-ClusterId{value='610193efe5d9d9074e3199f1', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+2021-07-28 22:59:19 [cluster-ClusterId{value='610193efe5d9d9074e3199f1', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:27017
+2021-07-28 22:59:19 [cluster-ClusterId{value='610193efe5d9d9074e3199f1', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+                Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=52210100}
+2021-07-28 22:59:19 [restartedMain] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-28 22:59:19 [restartedMain] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-28 22:59:20 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver -
+                Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-07-28 22:59:20 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2021-07-28 22:59:20 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+2021-07-28 22:59:20 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path ''
+2021-07-28 22:59:20 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Started CompanyDetailsForStockMarketApplication in 8.258 seconds (JVM running for 9.596)
+2021-07-28 23:00:24 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-28 23:00:24 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2021-07-28 23:00:24 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 1 ms
+2021-07-28 23:17:35 [main] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting Company details Application...
+2021-07-28 23:17:35 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting Company details Application...
+2021-07-28 23:17:36 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting CompanyDetailsForStockMarketApplication using Java 1.8.0_291 on TechRider with PID 17056 (D:\WORK\Workspaces\myWorkspace\stock market\CompanyDetailsApplication\target\classes started by tsd01 in D:\WORK\Workspaces\myWorkspace\stock market\CompanyDetailsApplication)
+2021-07-28 23:17:36 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                No active profile set, falling back to default profiles: default
+2021-07-28 23:17:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+                Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-28 23:17:36 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+                For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-28 23:17:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-07-28 23:17:37 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 6 ms. Found 0 MongoDB repository interfaces.
+2021-07-28 23:17:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+2021-07-28 23:17:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+2021-07-28 23:17:38 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2021-07-28 23:17:38 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-28 23:17:38 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2021-07-28 23:17:38 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 2035 ms
+2021-07-28 23:17:39 [restartedMain] INFO  org.mongodb.driver.cluster -
+                Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-07-28 23:17:39 [cluster-rtt-ClusterId{value='6101983b23b75271f118ecda', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
+2021-07-28 23:17:39 [cluster-ClusterId{value='6101983b23b75271f118ecda', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2021-07-28 23:17:39 [cluster-ClusterId{value='6101983b23b75271f118ecda', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+                Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=25510700}
+2021-07-28 23:17:39 [restartedMain] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-28 23:17:39 [restartedMain] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-28 23:17:40 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver -
+                Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-07-28 23:17:40 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2021-07-28 23:17:40 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+2021-07-28 23:17:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path ''
+2021-07-28 23:17:40 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Started CompanyDetailsForStockMarketApplication in 4.858 seconds (JVM running for 5.572)
+2021-07-28 23:18:08 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-28 23:18:08 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2021-07-28 23:18:08 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 3 ms
+2021-07-29 12:36:21 [main] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting Company details Application...
+2021-07-29 12:36:21 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting Company details Application...
+2021-07-29 12:36:22 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting CompanyDetailsForStockMarketApplication using Java 1.8.0_291 on TechRider with PID 19052 (D:\WORK\Workspaces\myWorkspace\stock market\CompanyDetailsApplication\target\classes started by tsd01 in D:\WORK\Workspaces\myWorkspace\stock market\CompanyDetailsApplication)
+2021-07-29 12:36:22 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                No active profile set, falling back to default profiles: default
+2021-07-29 12:36:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+                Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-29 12:36:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+                For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-29 12:36:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-07-29 12:36:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 12 ms. Found 0 MongoDB repository interfaces.
+2021-07-29 12:36:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+2021-07-29 12:36:26 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+2021-07-29 12:36:26 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2021-07-29 12:36:26 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-29 12:36:26 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2021-07-29 12:36:26 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 3677 ms
+2021-07-29 12:36:28 [restartedMain] INFO  org.mongodb.driver.cluster -
+                Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-07-29 12:36:28 [cluster-rtt-ClusterId{value='61025374873ede0d4deb915b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:27017
+2021-07-29 12:36:28 [cluster-ClusterId{value='61025374873ede0d4deb915b', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:27017
+2021-07-29 12:36:28 [cluster-ClusterId{value='61025374873ede0d4deb915b', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+                Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=57298000}
+2021-07-29 12:36:28 [restartedMain] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-29 12:36:28 [restartedMain] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-29 12:36:29 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver -
+                Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-07-29 12:36:29 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2021-07-29 12:36:29 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+2021-07-29 12:36:29 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -
+                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8083 is already in use
+2021-07-29 12:36:29 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Pausing ProtocolHandler ["http-nio-8083"]
+2021-07-29 12:36:29 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Stopping service [Tomcat]
+2021-07-29 12:36:29 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Stopping ProtocolHandler ["http-nio-8083"]
+2021-07-29 12:36:29 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Destroying ProtocolHandler ["http-nio-8083"]
+2021-07-29 12:36:29 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-29 12:36:29 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2021-07-29 12:36:51 [main] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting Company details Application...
+2021-07-29 12:36:51 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting Company details Application...
+2021-07-29 12:36:52 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Starting CompanyDetailsForStockMarketApplication using Java 1.8.0_291 on TechRider with PID 17904 (D:\WORK\Workspaces\myWorkspace\stock market\CompanyDetailsApplication\target\classes started by tsd01 in D:\WORK\Workspaces\myWorkspace\stock market\CompanyDetailsApplication)
+2021-07-29 12:36:52 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                No active profile set, falling back to default profiles: default
+2021-07-29 12:36:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+                Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-29 12:36:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor -
+                For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-29 12:36:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-07-29 12:36:54 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 8 ms. Found 0 MongoDB repository interfaces.
+2021-07-29 12:36:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8083 (http)
+2021-07-29 12:36:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8083"]
+2021-07-29 12:36:55 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2021-07-29 12:36:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-29 12:36:55 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2021-07-29 12:36:55 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+                Root WebApplicationContext: initialization completed in 3274 ms
+2021-07-29 12:36:57 [restartedMain] INFO  org.mongodb.driver.cluster -
+                Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-07-29 12:36:57 [cluster-rtt-ClusterId{value='6102539176129b25a3913047', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:2, serverValue:3}] to localhost:27017
+2021-07-29 12:36:57 [cluster-ClusterId{value='6102539176129b25a3913047', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2021-07-29 12:36:57 [cluster-ClusterId{value='6102539176129b25a3913047', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+                Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=36542700}
+2021-07-29 12:36:57 [restartedMain] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-29 12:36:58 [restartedMain] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-29 12:36:58 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver -
+                Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-07-29 12:36:58 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2021-07-29 12:36:58 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8083"]
+2021-07-29 12:36:58 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8083 (http) with context path ''
+2021-07-29 12:36:59 [restartedMain] INFO  c.s.c.CompanyDetailsForStockMarketApplication -
+                Started CompanyDetailsForStockMarketApplication in 7.724 seconds (JVM running for 8.811)
+2021-07-29 12:37:18 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-29 12:37:18 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2021-07-29 12:37:18 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                Completed initialization in 3 ms
+2021-08-05 14:43:12 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+                Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stockmarket.companydetails.CompanyDetailsForStockMarketApplicationTests], using SpringBootContextLoader
+2021-08-05 14:43:12 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+                Could not detect default resource locations for test class [com.stockmarket.companydetails.CompanyDetailsForStockMarketApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-08-05 14:43:12 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+                Could not detect default configuration classes for test class [com.stockmarket.companydetails.CompanyDetailsForStockMarketApplicationTests]: CompanyDetailsForStockMarketApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-08-05 14:43:12 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+                Found @SpringBootConfiguration com.stockmarket.companydetails.CompanyDetailsForStockMarketApplication for test class com.stockmarket.companydetails.CompanyDetailsForStockMarketApplicationTests
+2021-08-05 14:43:12 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+                Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-08-05 14:43:12 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+                Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@e3c0e40, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@329dbdbf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@7354b8c5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@20d7d6fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4ef782af, org.springframework.test.context.support.DirtiesContextTestExecutionListener@11d8ae8b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@479cbee5, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@59e2d8e3, org.springframework.test.context.event.EventPublishingTestExecutionListener@2b72cb8a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7f8a9499, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5d43661b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@12299890, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2fba3fc4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4bf48f6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@420a85c4]
+2021-08-05 14:43:13 [main] INFO  c.s.c.CompanyDetailsForStockMarketApplicationTests -
+                Starting CompanyDetailsForStockMarketApplicationTests using Java 1.8.0_291 on TechRider with PID 4036 (started by tsd01 in D:\WORK\Workspaces\myWorkspace\stock market\CompanyDetailsApplication)
+2021-08-05 14:43:13 [main] INFO  c.s.c.CompanyDetailsForStockMarketApplicationTests -
+                No active profile set, falling back to default profiles: default
+2021-08-05 14:43:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-08-05 14:43:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 12 ms. Found 0 MongoDB repository interfaces.
+2021-08-05 14:43:19 [main] INFO  org.mongodb.driver.cluster -
+                Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-08-05 14:43:19 [cluster-ClusterId{value='610babafc7b6a10ce699d70e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:27017
+2021-08-05 14:43:19 [cluster-rtt-ClusterId{value='610babafc7b6a10ce699d70e', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection -
+                Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+2021-08-05 14:43:19 [cluster-ClusterId{value='610babafc7b6a10ce699d70e', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster -
+                Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=58509000}
+2021-08-05 14:43:19 [main] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-08-05 14:43:19 [main] WARN  o.s.data.convert.CustomConversions -
+                Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-08-05 14:43:19 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver -
+                Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-08-05 14:43:21 [main] INFO  c.s.c.CompanyDetailsForStockMarketApplicationTests -
+                Started CompanyDetailsForStockMarketApplicationTests in 8.273 seconds (JVM running for 9.964)

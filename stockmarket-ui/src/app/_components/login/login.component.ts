@@ -51,7 +51,6 @@ export class LoginComponent implements OnInit {
       
     );
     this.router.navigate(['board']);
-   // this.router.navigate(['board']);
   }
 
   reloadPage(): void {
